@@ -7,9 +7,13 @@ spec:
   project: default
 
   source:
-    repoURL: https://github.com/sharadhirao/ArdoCD-Deployment.git
+    repoURL: https://github.com/thapabishwastellar/ArdoCD-Deployment.git
     targetRevision: HEAD
     path: dev
+    helm:
+      parameters:
+      - name: gitRev
+        value: $ARGOCD_APP_REVISION
   destination: 
     server: https://kubernetes.default.svc
     namespace: myapp
