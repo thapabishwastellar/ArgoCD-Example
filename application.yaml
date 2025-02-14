@@ -7,7 +7,7 @@ spec:
   project: default
 
   source:
-    repoURL: https://github.com/thapabishwastellar/ArdoCD-Deployment.git
+    repoURL: https://github.com/thapabishwastellar/ArdoCD-Example.git
     targetRevision: HEAD
     path: dev
     helm:
